@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>The Walking Man</title>
+
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
+</head>
+<body>
+	<h1>The Walking Man</h1>
+
+	<p>Click <strong>Play</strong> to make the man walk, <strong>Pause</strong> to make him stop, and <strong>Reset</strong> to make the man start over.</p>
+	
+	<p><img id="slideshow" src="images/man1.gif"></p>
+	<p><input id="play" type="button" value="Play" onclick="mode('play');startSlideshow();">
+	<input id="pause" type="button" value="Pause" disabled="disabled" onclick="mode('pause');startSlideshow();">
+	<input id="stop" type="button" value="Reset" disabled="disabled" onclick="mode('stop');startSlideshow();"></p>
+	
+	<p>I created the individual images from a gif found <a href="https://commons.wikimedia.org/wiki/File:Blender3D_NormalWalkCycle.gif">here</a>.</p>
+	<p>View <a href="">my GitHub repo</a>.</p>
+	
+	<script src="scripts/main.js"></script>
+
+</body>
+</html>
